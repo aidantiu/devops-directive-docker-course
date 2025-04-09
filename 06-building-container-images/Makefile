@@ -29,7 +29,6 @@ run-sample-entrypoint-cmd: build-sample
 	@echo "##############################"
 	@echo "Run with argument (CMD is ignored):"
 	docker run sample "+ (argument)"
-
 	@echo "##############################"
 	@echo "Overriden entrypoint with no arguments (CMD is ignored):"
 	docker run --entrypoint echo sample
